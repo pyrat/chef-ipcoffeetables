@@ -1,0 +1,13 @@
+= DESCRIPTION:
+
+Basic cookbook for setting up an extremely simple iptables firewall setup. 
+Currently only Ubuntu is supported, please contribute for other platforms.
+
+Iptables should be installed, I think this is default on Ubuntu servers?
+
+= ATTRIBUTES:
+
+ssh_port : 22
+
+= USAGE:
+

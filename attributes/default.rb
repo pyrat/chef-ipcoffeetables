@@ -1,0 +1,1 @@
+default["ipcoffeetables"]["ssh_port"] = 22
