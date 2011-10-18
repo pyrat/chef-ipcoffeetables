@@ -20,7 +20,8 @@ template "/etc/iptables.up.rules" do
   group "root"
   mode "0755"
   variables(
-  :ssh_port => node["ipcoffeetables"]["ssh_port"]
+  :ssh_port => node["ipcoffeetables"]["ssh_port"],
+  :custom_ports => node["ipcoffeetables"]["custom_ports"]
   )
 end
 

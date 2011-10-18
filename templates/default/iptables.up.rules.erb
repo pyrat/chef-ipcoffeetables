@@ -27,6 +27,12 @@
 -A INPUT -p tcp -m state --state NEW --dport <%= @ssh_port %> -j ACCEPT
 
 
+# Custom TCP Ports
+<% @custom_ports.each do |port| %>
+-A INPUT -p tcp -m state --state NEW --dport <%= port %> -j ACCEPT
+<% end %>
+
+
 # Allow ping
 -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
 
